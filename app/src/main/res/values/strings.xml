@@ -10,4 +10,18 @@
     <string name="id">Id:</string>
     <string name="name">Name:</string>
     <string name="birthdate">Birthdate:</string>
+    <string name="error">Error</string>
+    <string name="add">User added</string>
+    <string name="sucess_add">User succesfully added</string>
+    <string name="user_update">User updated</string>
+    <string name="sucess_update">User succesfully updated</string>
+    <string name="user_delete">User deleted</string>
+    <string name="sucess_delete">User succesfully deleted</string>
+    <string name="error_network">Network Error try again later</string>
+    <string name="no_data">There are not data for this id</string>
+    <string name="fill_data">You must fill in all fields</string>
+    <string name="searching">Searching Users</string>
+    <string name="loading">Loading Users</string>
+    <string name="creating">Creating Users</string>
+
 </resources>

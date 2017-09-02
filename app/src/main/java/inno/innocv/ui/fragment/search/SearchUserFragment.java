@@ -119,7 +119,7 @@ public class SearchUserFragment extends BaseFragment implements SearchUserView, 
     public void onShowProgressDialog() {
         if (mProgressDialog == null) {
             mProgressDialog = new ProgressDialog(getActivity());
-            mProgressDialog.setMessage("Searching Users");
+            mProgressDialog.setMessage(getString(R.string.searching));
             mProgressDialog.setIndeterminate(false);
             mProgressDialog.setCancelable(false);
         }
@@ -181,7 +181,7 @@ public class SearchUserFragment extends BaseFragment implements SearchUserView, 
                     imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
                 }
                 if (mId.getText().toString().equalsIgnoreCase("")) {
-                    Utils.createDialog(getContextPref(), Constants.MESSAGE_EMPTY, Constants.TITTLE_ERROR, R.drawable.ic_error);
+                    Utils.createDialog(getContextPref(), getContextPref().getResources().getString(R.string.fill_data), getContextPref().getResources().getString(R.string.error), R.drawable.ic_error);
                 } else {
                     final Bundle bundleId = new Bundle();
                     bundleId.putInt("id", Integer.parseInt(mId.getText().toString()));

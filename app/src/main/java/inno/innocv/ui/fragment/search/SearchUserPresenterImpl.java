@@ -15,7 +15,6 @@ import inno.innocv.data.loader.SearchLoader;
 import inno.innocv.data.model.UserInfoValue;
 import inno.innocv.utils.Constants;
 
-import static inno.innocv.utils.Constants.MESSAGE_NO_DATA;
 
 /**
  * @author eladio freire
@@ -74,7 +73,7 @@ public class SearchUserPresenterImpl implements SearchUserPresenter {
                 @Override
                 public void onFail(int message) {
                     if (message == 10) {
-                        dialog(context, MESSAGE_NO_DATA);
+                        dialog(context, context.getResources().getString(R.string.no_data));
                     }
                     hideProgressDialog();
                 }
@@ -134,7 +133,7 @@ public class SearchUserPresenterImpl implements SearchUserPresenter {
                 } else {
                     builder = new AlertDialog.Builder(context);
                 }
-                builder.setTitle(Constants.TITTLE_ERROR)
+                builder.setTitle(context.getResources().getString(R.string.error))
                         .setMessage(message)
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {

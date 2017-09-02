@@ -170,7 +170,7 @@ public class AddFragment extends BaseFragment implements AddView, View.OnClickLi
     public void onShowProgressDialog() {
         if (mProgressDialog == null) {
             mProgressDialog = new ProgressDialog(getActivity());
-            mProgressDialog.setMessage("Creating Users");
+            mProgressDialog.setMessage(getString(R.string.creating));
             mProgressDialog.setIndeterminate(false);
             mProgressDialog.setCancelable(false);
         }
@@ -216,7 +216,7 @@ public class AddFragment extends BaseFragment implements AddView, View.OnClickLi
         switch (v.getId()) {
             case R.id.buttonCreate:
                 if (mEditTextCalendar.getText().toString().equalsIgnoreCase("") || mEditTextUser.getText().toString().equalsIgnoreCase("")) {
-                    Utils.createDialog(getContextPref(), Constants.MESSAGE_EMPTY, Constants.TITTLE_ERROR, R.drawable.ic_error);
+                    Utils.createDialog(getContextPref(), getContextPref().getResources().getString(R.string.fill_data), getContextPref().getResources().getString(R.string.error), R.drawable.ic_error);
                 } else {
                     createUser(getContextPref(), mEditTextCalendar.getText().toString(), mEditTextUser.getText().toString());
                 }

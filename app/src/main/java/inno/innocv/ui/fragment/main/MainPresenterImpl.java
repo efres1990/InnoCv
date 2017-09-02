@@ -98,8 +98,8 @@ public class MainPresenterImpl implements MainPresenter {
                             } else {
                                 builder = new AlertDialog.Builder(context);
                             }
-                            builder.setTitle(Constants.TITTLE_ERROR)
-                                    .setMessage(Constants.MESSAGE_ERROR)
+                            builder.setTitle(context.getResources().getString(R.string.error))
+                                    .setMessage(context.getResources().getString(R.string.error_network))
                                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog, int which) {
                                             ((Activity) context).onBackPressed();
@@ -245,8 +245,8 @@ public class MainPresenterImpl implements MainPresenter {
                 } else {
                     builder = new AlertDialog.Builder(context);
                 }
-                builder.setTitle(Constants.TITTLE_ERROR)
-                        .setMessage(Constants.MESSAGE_ERROR)
+                builder.setTitle(context.getResources().getString(R.string.error))
+                        .setMessage(context.getResources().getString(R.string.error_network))
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                             }

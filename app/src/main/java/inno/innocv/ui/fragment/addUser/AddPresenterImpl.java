@@ -47,7 +47,7 @@ public class AddPresenterImpl implements AddPresenter {
                     mHandler.post(new Runnable() {
                         @Override
                         public void run() {
-                            Utils.createDialog(context, Constants.TITTLE_ADDED, Constants.MESSAGE_ADDED, R.drawable.ic_check_mark_button);
+                            Utils.createDialog(context, context.getResources().getString(R.string.sucess_add), context.getResources().getString(R.string.add), R.drawable.ic_check_mark_button);
                             hideProgressDialog();
                             updateData(userInfoValues);
                         }
@@ -113,8 +113,8 @@ public class AddPresenterImpl implements AddPresenter {
                 } else {
                     builder = new AlertDialog.Builder(context);
                 }
-                builder.setTitle(Constants.TITTLE_ERROR)
-                        .setMessage(Constants.MESSAGE_ERROR)
+                builder.setTitle(context.getResources().getString(R.string.error))
+                        .setMessage(context.getResources().getString(R.string.error_network))
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                             }

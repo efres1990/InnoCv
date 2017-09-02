@@ -71,7 +71,7 @@ public class EditPresenterImpl implements EditPresenter {
                     mHandler.post(new Runnable() {
                         @Override
                         public void run() {
-                            Utils.createDialog(context, Constants.TITTLE_EDIT, Constants.MESSAGE_EDIT, R.drawable.ic_check_mark_button);
+                            Utils.createDialog(context, context.getResources().getString(R.string.user_update), context.getResources().getString(R.string.sucess_update), R.drawable.ic_check_mark_button);
 
                             updateData(userInfoValues);
 
@@ -116,7 +116,7 @@ public class EditPresenterImpl implements EditPresenter {
                     mHandler.post(new Runnable() {
                         @Override
                         public void run() {
-                            Utils.createDialog(context, Constants.TITTLE_EDIT, Constants.MESSAGE_EDIT, R.drawable.ic_check_mark_button);
+                            Utils.createDialog(context, context.getResources().getString(R.string.sucess_delete), context.getResources().getString(R.string.user_delete), R.drawable.ic_check_mark_button);
                         }
                     });
                 }
@@ -159,10 +159,11 @@ public class EditPresenterImpl implements EditPresenter {
                 } else {
                     builder = new AlertDialog.Builder(context);
                 }
-                builder.setTitle(Constants.TITTLE_ERROR)
-                        .setMessage(Constants.MESSAGE_ERROR)
+                builder.setTitle(context.getResources().getString(R.string.error))
+                        .setMessage(context.getResources().getString(R.string.error_network))
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
+
                             }
 
                         })

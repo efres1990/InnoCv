@@ -27,7 +27,9 @@ public class Utils {
                 .setMessage(message)
                 .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        if (tittle.contains("added") || tittle.contains("updated"))
+                        if (tittle.contains("added") || tittle.contains("añadido")
+                                || tittle.contains("updated") || tittle.contains("actualizado")
+                                || tittle.contains("deleted") || tittle.contains("borrado"))
                             ((Activity) context).onBackPressed();
                     }
                 })

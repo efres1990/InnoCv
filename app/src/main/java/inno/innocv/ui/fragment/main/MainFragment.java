@@ -155,7 +155,7 @@ public class MainFragment extends BaseFragment implements MainView, View.OnClick
     public void onShowProgressDialog() {
         if (mProgressDialog == null) {
             mProgressDialog = new ProgressDialog(getActivity());
-            mProgressDialog.setMessage("Loading Users");
+            mProgressDialog.setMessage(getString(R.string.loading));
             mProgressDialog.setIndeterminate(false);
             mProgressDialog.setCancelable(false);
         }

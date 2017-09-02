@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InnoCv</string>
+    <string name="add">Usuario añadido</string>
+    <string name="birthdate">Cumpleaños:</string>
+    <string name="create">CREAR</string>
+    <string name="delete">Borrar</string>
+    <string name="edit">Editar</string>
+    <string name="error">Error</string>
+    <string name="error_network">Error de Conexión</string>
+    <string name="example_user">Ejemplo</string>
+    <string name="fill_data">Debe rellenar todos los campos</string>
+    <string name="id">Id:</string>
+    <string name="name">Nombre:</string>
+    <string name="no_data">No hay datos para este id</string>
+    <string name="search">buscar</string>
+    <string name="sucess_add">Usuario añadido correctamente</string>
+    <string name="sucess_delete">Usuario borrado correctamente</string>
+    <string name="sucess_update">Usuario actualizado correctamente</string>
+    <string name="update">AZTUALIZAR</string>
+    <string name="user_delete">Usuario borrado</string>
+    <string name="user_id">id usuario</string>
+    <string name="user_update">Usuario actualizado</string>
+    <string name="searching">Buscando Usuarios</string>
+    <string name="loading">Cargando Usuarios</string>
+    <string name="creating">Creando Usuario</string>
+</resources>
