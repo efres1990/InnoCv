@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -173,7 +174,12 @@ public class SearchUserFragment extends BaseFragment implements SearchUserView, 
 
         switch (v.getId()) {
             case R.id.buttonSearch:
-                mId.setInputType(0);
+                //mId.setInputType(0);
+                View view = getBaseActivity().getCurrentFocus();
+                if (view != null) {
+                    InputMethodManager imm = (InputMethodManager) getContextPref().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                }
                 if (mId.getText().toString().equalsIgnoreCase("")) {
                     Utils.createDialog(getContextPref(), Constants.MESSAGE_EMPTY, Constants.TITTLE_ERROR, R.drawable.ic_error);
                 } else {
