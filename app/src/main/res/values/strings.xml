@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InnoCv</string>
+    <string name="example_user">Example</string>
+    <string name="create">CREATE</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="update">UPDATE</string>
+    <string name="search">search</string>
+    <string name="user_id">user id</string>
+    <string name="id">Id:</string>
+    <string name="name">Name:</string>
+    <string name="birthdate">Birthdate:</string>
+</resources>

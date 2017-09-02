@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eladiofreire.innocvproject.ui.activity.SearchUserActivity">
+
+    <FrameLayout
+        android:id="@+id/layout_search_content"
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        android:background="#ffff"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+</android.support.constraint.ConstraintLayout>
