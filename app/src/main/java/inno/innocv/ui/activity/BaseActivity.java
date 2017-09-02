@@ -4,7 +4,6 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-
 /**
  * @author eladiofreire on 21/8/17.
  */
