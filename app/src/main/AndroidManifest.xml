@@ -24,8 +24,6 @@
 
         <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.EditActivity" />
-
-
         <activity android:name=".ui.activity.SearchUserActivity" />
     </application>
 
